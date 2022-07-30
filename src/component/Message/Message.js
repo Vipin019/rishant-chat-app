@@ -14,7 +14,7 @@ const Message = ({ message: { text, user }, name }) => {
     isSentByCurrentUser = true;
   }
 
-  return (
+  return ( <div>{
     isSentByCurrentUser
       ? (
         <div className="messageContainer justifyEnd">
@@ -32,6 +32,9 @@ const Message = ({ message: { text, user }, name }) => {
             <p className="sentText pl-10 ">{user}</p>
           </div>
         )
+  }
+  </div>
+    
   );
 }
 

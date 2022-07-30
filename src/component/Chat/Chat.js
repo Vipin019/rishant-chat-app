@@ -28,7 +28,7 @@ const Chat = ()  => {
        });
 
       return () =>{
-        // socket.emit('disconnect');
+      //   socket.emit('disconnect');
          socket.off();
       }
       
